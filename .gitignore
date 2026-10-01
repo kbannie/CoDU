@@ -1,0 +1,32 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+._*
+.cache/
+
+# Model assets from the original archive
+/model/yolo/
+/model/paddleocr/
+/model/pix2tex/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.pdparams
+*.pdiparams
+*.pdmodel
+
+# Local data and generated results
+/data/
+/datasets/
+/output/
+/runs/
+/temp_images*/
+/.ultralytics/
+*.zip

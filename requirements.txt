@@ -1,0 +1,8 @@
+--extra-index-url https://www.paddlepaddle.org.cn/packages/stable/cu126
+--trusted-host www.paddlepaddle.org.cn
+paddlepaddle-gpu==3.0.0
+koreanize-matplotlib
+paddleocr
+doclayout-yolo
+pix2tex
+dill==0.3.8
