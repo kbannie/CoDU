@@ -21,7 +21,7 @@ python -m pip install -r requirements.txt pdf2image scikit-learn
 
 ## Model weights
 
-Download the files below individually and save each at the specified path. Create missing folders; for PaddleOCR downloads, rename the file to the exact filename shown in **Save as**. The OCR configuration files are already included in this repository. Repository access is required while this project is private.
+Download the files below individually and save each at the specified path. Create missing folders; for PaddleOCR downloads, rename the file to the exact filename shown in **Save as**. The OCR configuration files are already included in this repository.
 
 | Model | Download | Save as (relative to repository root) |
 | --- | --- | --- |
