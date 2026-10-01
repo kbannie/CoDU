@@ -34,22 +34,6 @@ Download the files below individually and save each at the specified path. Creat
 
 Pix2Tex weights enable formula transcription; the script can continue without Pix2Tex if its initialization fails.
 
-<details>
-<summary>Additional model files from the original archive (not loaded by default)</summary>
-
-| Model | Download | Save as (relative to repository root) |
-| --- | --- | --- |
-| Additional YOLO checkpoint | [best.pt](https://github.com/kbannie/CoDU/releases/download/original-archive/best.pt) | `model/yolo/best.pt` |
-| Additional YOLO checkpoint | [doclaynet_10.pt](https://github.com/kbannie/CoDU/releases/download/original-archive/doclaynet_10.pt) | `model/yolo/doclaynet_10.pt` |
-| Additional YOLO checkpoint | [epoch_3.pt](https://github.com/kbannie/CoDU/releases/download/original-archive/epoch_3.pt) | `model/yolo/epoch_3.pt` |
-| Additional YOLO checkpoint | [yolov12l-doclaynet.pt](https://github.com/kbannie/CoDU/releases/download/original-archive/yolov12l-doclaynet.pt) | `model/yolo/yolov12l-doclaynet.pt` |
-| Additional recognition checkpoint | [korean_PP-OCRv5_mobile_rec_pretrained.pdparams](https://github.com/kbannie/CoDU/releases/download/original-archive/korean_PP-OCRv5_mobile_rec_pretrained.pdparams) | `model/paddleocr/rec/korean_PP-OCRv5_mobile_rec_infer/korean_PP-OCRv5_mobile_rec_pretrained.pdparams` |
-| Orientation classifier parameters | [paddleocr_cls_inference.pdiparams](https://github.com/kbannie/CoDU/releases/download/original-archive/paddleocr_cls_inference.pdiparams) | `model/paddleocr/cls/ch_ppocr_mobile_v2.0_cls_infer/inference.pdiparams` |
-| Orientation classifier model | [paddleocr_cls_inference.pdmodel](https://github.com/kbannie/CoDU/releases/download/original-archive/paddleocr_cls_inference.pdmodel) | `model/paddleocr/cls/ch_ppocr_mobile_v2.0_cls_infer/inference.pdmodel` |
-| Orientation classifier metadata | [paddleocr_cls_inference.pdiparams.info](https://github.com/kbannie/CoDU/releases/download/original-archive/paddleocr_cls_inference.pdiparams.info) | `model/paddleocr/cls/ch_ppocr_mobile_v2.0_cls_infer/inference.pdiparams.info` |
-
-</details>
-
 File checksums: [SHA256SUMS](https://github.com/kbannie/CoDU/releases/download/original-archive/SHA256SUMS). Datasets are not included.
 
 ## Run
