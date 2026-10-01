@@ -10,7 +10,7 @@ venv/
 ._*
 .cache/
 
-# Model weights are distributed in the complete archive under Releases.
+# Model weights are distributed as individual release assets.
 # Keep model configuration files visible in Git.
 *.pt
 *.pth
