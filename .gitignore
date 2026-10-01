@@ -10,16 +10,15 @@ venv/
 ._*
 .cache/
 
-# Model assets from the original archive
-/model/yolo/
-/model/paddleocr/
-/model/pix2tex/
+# Model weights are distributed in the complete archive under Releases.
+# Keep model configuration files visible in Git.
 *.pt
 *.pth
 *.ckpt
 *.safetensors
 *.pdparams
 *.pdiparams
+*.pdiparams.info
 *.pdmodel
 
 # Local data and generated results

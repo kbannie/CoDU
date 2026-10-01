@@ -2,11 +2,14 @@
 
 Document understanding code for the 2025 Samsung AI Challenge. The pipeline combines DocLayout-YOLO layout detection, PaddleOCR text recognition, Pix2Tex formula recognition, bounding-box post-processing, and reading-order reconstruction.
 
+**[Download the complete original ZIP, including all model weights (737 MiB)](https://github.com/kbannie/CoDU/releases/tag/original-archive).** The repository contains source code and model configurations; the release preserves every file from the original archive. Repository access is required while this project is private.
+
 ## Files
 
 - `script.py`: document inference and CSV/visualization output.
 - `model/order/order_again.py`: reading-order post-processing.
 - `model/order/dacon_test.py`: local evaluation utilities.
+- `model/paddleocr/`: OCR model configurations.
 
 ## Setup
 
@@ -18,16 +21,15 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt pdf2image scikit-learn
 ```
 
-Model assets and datasets are not included in this repository. Restore the model folders from the original code archive, keeping these paths:
+Download `haeing2ordering.zip` from the release above and extract it at the repository root to restore all model assets. With GitHub CLI:
 
-```text
-model/yolo/doclayout_yolo_docstructbench.pt
-model/yolo/formula_yolo.pt
-model/paddleocr/det/PP-OCRv5_server_det/
-model/paddleocr/rec/korean_PP-OCRv5_mobile_rec_infer/
-model/pix2tex/weights.pth
-model/pix2tex/image_resizer.pth
+```bash
+gh release download original-archive --repo kbannie/CoDU --pattern 'haeing2ordering.zip*'
+shasum -a 256 -c haeing2ordering.zip.sha256
+unzip -n haeing2ordering.zip
 ```
+
+The archive includes the YOLO, PaddleOCR, and Pix2Tex model folders. Datasets are not included.
 
 ## Run
 
